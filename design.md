@@ -1,116 +1,108 @@
-# Nebula Project Website
+# Nebula Project
 
-Sitio web oficial. Este archivo contiene informacion sobre el
-diseno y brand guidelines sobre nuestro sitio web y marca.
+A responsive, single-page marketing site for **Nebula Project**, a creative agency specializing in web design and development, copywriting and SEO, and ads and social media integration.
 
-Es importante documentar cambios en el sistema de UI/UX y
-reglas que sean necesarias implementar en el modelo.
+**Live site:** [nebulaproject.netlify.app](https://nebulaproject.netlify.app/)
 
-## Typografia y Google Fonts
-
-- Headers font: Orbitron
-  font-family: "Orbitron", sans-serif;
-- Body Copy: "Lato", sans-serif;
-- Accent: "Righteous", sans-serif;
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+![Nebula Project homepage](/images/screenshot-homepage.png)
+<!-- Replace with a real screenshot of the homepage. -->
 
 ## Overview
 
-### The challenge
+Nebula Project is built to show a brand that can take on any kind of project. The page presents the agency's story, services, and client work, and gives visitors a direct way to get in touch through a contact form.
 
-Users should be able to:
+I handled the full process: UX research, visual design in Adobe XD, and front-end development with HTML, CSS, and vanilla JavaScript.
 
-- Complete the form and see a success toast message upon successful submission
-- Receive form validation messages if:
-  - A required field has been missed
-  - The email address is not formatted correctly
-- Complete the form only using their keyboard
-- Have inputs, error messages, and the success message announced on their screen reader
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+## Design concept: why space?
 
-### Screenshot
+The agency's name, *Nebula*, comes from the vast clouds of gas and dust where stars are born. That idea drove the whole visual direction:
 
-![](./screenshot.jpg)
+- **Innovation and possibility.** A nebula is where something new takes shape. The space theme tells visitors that the agency approaches each project as a fresh creative opportunity.
+- **Range.** Space is open and limitless, which reflects how the agency can work with any industry, any brand, and any idea that comes its way. The portfolio reflects that range, from an entertainment magazine to a 3D invitation service to a local family business.
+- **Depth and motion.** Layered visuals and animation give the page a sense of depth, as if the visitor is moving through space as they scroll.
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+The goal was a site that feels distinctive and memorable without hurting readability or usability.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+## Features
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+- Single-page layout with sections for Home, About, Services, Work, and Contact
+- Smooth anchor navigation between sections
+- CSS and JavaScript animations on page load and as the visitor explores the page
+- Statistics section that makes the case for professional web design
+- Portfolio showcase linking to live client websites
+- Contact form that sends inquiries to the agency
+- Responsive layout for mobile, tablet, and desktop
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+## How it's built
 
-### Links
+### HTML
+Semantic, section-based markup keeps the page organized and accessible. Each section has its own anchor, which drives the navigation.
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+### CSS
+- **Animations:** CSS keyframe animations and transitions create the motion and atmosphere, without relying on an animation library.
+- **Layout:** Flexbox and/or Grid handle section layouts, with media queries adapting the design to different screen sizes.
+- **Theming:** Color, typography, and spacing are kept consistent across sections to hold the space-inspired look together.
+<!-- Add specifics if you like, e.g. CSS custom properties, the technique behind the background effect, or your breakpoints. -->
 
-## My process
+### JavaScript
+Vanilla JavaScript triggers the page-load animations and handles interactive behavior such as navigation. Keeping it framework-free keeps the page lightweight and fast to load.
+<!-- Add specifics, e.g. IntersectionObserver for scroll reveals, or how the loading sequence works. -->
 
-### Built with
+### Contact form
+The form is powered by **Netlify Forms**, so submissions go straight to the agency without a custom backend. This keeps the site simple to host and maintain.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+## Tools and technologies
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+| Area | Tools |
+| --- | --- |
+| Design | Adobe XD |
+| Front end | HTML5, CSS3, JavaScript (vanilla) |
+| Forms | Netlify Forms |
+| Hosting and deployment | Netlify |
+| Version control | Git, GitHub |
 
-### What I learned
+## Project structure
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
 ```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+nebula-project/
+├── index.html
+├── css/
+├── js/
+├── images/
+└── README.md
 ```
+<!-- Update to match the actual folder structure. -->
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+## Running locally
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+No build step is required.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+1. Clone the repository
+   ```bash
+   git clone https://github.com/justbycris/<repo-name>.git
+   ```
+2. Open `index.html` in your browser, or serve the folder with a local server such as the VS Code Live Server extension.
 
-### Continued development
+Note: Netlify Forms only works when the site is deployed on Netlify, so the contact form won't submit locally.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+## Deployment
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+The site is deployed on Netlify and connected to the repository, so pushing to the main branch publishes the latest version.
 
-### Useful resources
+## What I learned
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- Designing a cohesive visual concept around a brand name, and carrying it through color, motion, and layout
+- Building engaging animation with CSS and vanilla JavaScript, with attention to performance
+- Collecting form submissions without writing a backend
+- Taking a project from UX research and design in Adobe XD to a live, deployed site
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+## Possible next steps
+
+- Migrate to a component-based framework such as Next.js
+- Connect the portfolio content to a headless CMS so the agency can update it without editing code
+- Add a performance and accessibility audit pass
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+**Cristina Gutierrez N.**
+[LinkedIn](https://www.linkedin.com/in/cristigtzname/) · [GitHub](https://github.com/justbycris) · [Portfolio](https://bycris.netlify.app/)
